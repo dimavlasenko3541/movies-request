@@ -81,7 +81,7 @@ const createSearchBox = (container) => {
   setAttribute(input, {
     class: "search__input",
     id: "search",
-    placeholder: "Начните вводить текст...",
+    placeholder: "Start typing ...",
     type: "Text",
   });
   setAttribute(labelForinput, {
