@@ -13,7 +13,7 @@ inputSearch.addEventListener("keyup", (e) => {
     if (searchString && searchString.length > 4)
       if (!triggerMode) clearMoviesMarcup();
 
-    getData(`http://www.omdbapi.com/?s=${searchString}&apikey=c71c5bd0`)
+    getData(`https://www.omdbapi.com/?s=${searchString}&apikey=c71c5bd0`)
       .then((movies) => movies.forEach((movie) => addMovieToList(movie)))
       .catch((err) => console.log(err));
   }, 1000);
